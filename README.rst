@@ -4,6 +4,10 @@ Fixed size memory allocator using free list
 
 :Date: 2018-05-29
 
+Based on Arpan Sen and Rahul Kumar Kardam tutorial
+"Building your own memory manager for C/C++ projects"
+<https://www.ibm.com/developerworks/aix/tutorials/au-memorymanager>.
+
 
 How it works?
 =============
