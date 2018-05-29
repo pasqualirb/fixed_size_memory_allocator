@@ -70,8 +70,6 @@ expand_capacity(struct memory *mem, unsigned long size)
 int
 allocator_expand_capacity(struct memory *mem, unsigned long size)
 {
-	TRACE("allocator: expanding capacity");
-
 	if (!size)
 		return -1;
 
@@ -136,8 +134,6 @@ allocator_alloc(struct memory *mem, unsigned long size)
 void
 allocator_clean_up(struct memory *mem)
 {
-	TRACE("allocator: cleaning up");
-
 	struct free_chunk *current;
 
 	while (mem->free_list) {
@@ -162,8 +158,6 @@ int
 allocator_init(struct memory *mem, unsigned long object_size,
 	       unsigned long initial_size, unsigned long auto_expand_amount)
 {
-	TRACE("allocator: initializing");
-
 	if (!initial_size)
 		return -1;
 
